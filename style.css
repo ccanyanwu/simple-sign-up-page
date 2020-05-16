@@ -9,10 +9,13 @@
 
 
 body{
-    height: 100vh ;
     line-height: 1.5;
     font-size: 16px;
     font-family: 'Lato', sans-serif;
+    min-height: 100vh;
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
+
     
     /*background of page*/
     background-size: cover;
@@ -26,7 +29,8 @@ section{
   text-align: center ;
   justify-content: center ;
   align-items: center ;
-  height: 100vh ;
+  min-height: 100vh ;
+  min-height: -webkit-fill-available;
 }
 
 /*join us button*/
